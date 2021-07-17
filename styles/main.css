@@ -1,7 +1,15 @@
+@font-face {
+  font-family: atmosphere;
+  src: url(../font/aAtmospheric.ttf);
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+i {
+  color: #0073e6;
 }
 .menu {
   display: flex;
@@ -11,11 +19,17 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+  transition: 0.5s;
+  height: 100px;
 }
 .logo {
-  font-size: 30px;
-  font-weight: bolder;
+  width: 10%;
   margin: 0 2rem;
+  transition: 0.5s;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
 }
 .menu__list {
   display: flex;
@@ -23,32 +37,34 @@
   align-items: flex-end;
 }
 .menu__list--item {
-  font-size: 20px;
   margin: 1rem 2rem;
+  transition: 0.5s;
 }
 .menu__list--item a {
   color: black;
+  font-size: 24px;
   text-decoration: none;
   border: none;
-  padding-bottom: 0.9rem;
+  padding-bottom: 0rem;
   transition: 0.5s;
 }
 .menu__list--item a:hover,
 .menu__list--item a:focus {
-  color: rgba(0, 255, 157, 0.836);
-  border-bottom: 1px solid rgba(0, 255, 157, 0.836);
+  color: #0fff00;
+  border-bottom: 1px solid #0fff00;
 }
 .slang {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  background: rgba(117, 168, 228, 0.678);
+  background: #0073e6;
   height: 50vh;
 }
 .slang h1 {
   font-size: 50px;
   font-weight: 300;
+  font-family: atmosphere;
 }
 .slang h2 {
   font-weight: 200;
@@ -60,7 +76,7 @@
   height: 0.5px;
   left: -22%;
   position: relative;
-  background: rgba(0, 0, 0, 0.568);
+  background: #0fff00;
   margin: 0.9rem;
 }
 .conteiner__main {
@@ -92,11 +108,10 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 20vh;
   width: 100%;
 }
 .num div {
-  min-width: 20%;
+  min-width: 20vh;
   margin: 0 1rem;
   text-align: center;
   padding: 3rem;
@@ -150,6 +165,10 @@
   -webkit-box-shadow: 4px 5px 10px 1px rgba(0, 0, 0, 0.73);
   box-shadow: 4px 5px 10px 1px rgba(0, 0, 0, 0.73);
 }
+.place__atr p {
+  margin: 1.5rem;
+  width: 50%;
+}
 .white {
   background: white;
   width: 100%;
@@ -159,8 +178,7 @@
   align-items: center;
   flex-flow: column;
   width: 100%;
-  background: rgba(84, 145, 214, 0.904);
-  height: 60vh;
+  background: #0073e6;
 }
 .contact__title {
   display: flex;
@@ -177,7 +195,7 @@
   width: 200%;
   height: 0.5px;
   position: relative;
-  background: rgba(0, 0, 0, 0.568);
+  background: #0fff00;
   margin: 0.9rem;
   transform: translateX(-30%);
 }
@@ -188,19 +206,22 @@
   text-align: center;
   font-size: 1.5rem;
 }
-.but__map{
+.contact__box--info i {
+  color: black;
+}
+.but__map {
   padding: 0.5rem 3rem;
   margin: 1rem;
   border-radius: 50px;
   border: 0.5px solid rgba(0, 0, 0, 0.315);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.37);
 }
-.but__map:hover{
-  background: rgb(71, 71, 209);
-  color: rgba(255, 255, 255, 0.637);
+.but__map:hover {
+  background: #0fff00;
+  color: #0073e6;
   cursor: pointer;
 }
-.map{
+.map {
   position: relative;
 }
 .info__conteiner {
@@ -234,6 +255,68 @@
 .info__item i {
   font-size: 3rem;
 }
-.map_down{
+.map_down {
   z-index: -1;
+}
+footer {
+  border-top: 1px solid #0fff00;
+  position: relative;
+  height: 50px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto 0 auto;
+}
+.to__up {
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+}
+.to__up a i {
+  font-size: 2rem;
+  color: #0fff00;
+}
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .AboutUs {
+    width: 90%;
+  }
+  .AboutUs p {
+    font-size: 16px;
+  }
+  .Equipment__dis {
+    height: auto;
+    width: 100%;
+    flex-flow: column;
+  }
+  .Equipment__dis img {
+    display: none;
+  }
+  .Equipment__dis p {
+    margin: 0.5rem;
+    font-size: 15px;
+    width: 90%;
+  }
+  .place__atr {
+    flex-flow: column;
+  }
+  .num {
+    margin: 1rem 0;
+    min-width: 10vh;
+    flex-flow: column;
+    align-items: center;
+  }
+  .num div {
+    margin: 0.2rem 0.5rem;
+    padding: 1.5rem;
+    border: none;
+    border: 1px solid #e2e2e2;
+    min-width: 50%;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.315);
+  }
+  .place {
+    height: auto;
+  }
 }

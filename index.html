@@ -15,30 +15,30 @@
   <body>
     <header>
       <nav class="menu">
-        <a class="logo">LOGO</a>
+        <a class="logo"><img src="logo.svg" /></a>
         <ul class="menu__list">
           <li class="menu__list--item">
-            <a href="#">O Nas</a>
+            <a href="#AboutUs">O Nas</a>
           </li>
           <li class="menu__list--item">
-            <a href="#">Kontakt</a>
+            <a href="#contact">Kontakt</a>
           </li>
           <li class="menu__list--item">
             <a href="#">Aktualności</a>
           </li>
           <li class="menu__list--item">
             <i class="fas fa-phone-alt"></i>
-            <a href="#">123 321 321</a>
+            <a href="tel:+48123456789">Zadzwoń teraz</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="slang">
+      <div class="slang" id="top">
         <h1>CzaDomki</h1>
         <h2>Domki Pod Czantorią</h2>
       </div>
-      <div class="conteiner__main">
+      <div class="conteiner__main" id="AboutUs">
         <div class="AboutUs">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -65,17 +65,6 @@
             remaining essentially unchanged. It was popularised in the 1960s
             with the release of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-            <br />
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
         <div class="num">
@@ -91,7 +80,7 @@
           </div>
           <div>
             <i class="fas fa-bed"></i>
-            <p>łóżka:</p>
+            <p>Łóżka: </p>
             <p>12</p>
           </div>
         </div>
@@ -102,13 +91,15 @@
           <img src="gora.jpg" alt="czantoria gora szlaki" />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsu
+            industry. Lorem Ipsu, Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsu
           </p>
         </div>
         <div class="place__atr white">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsu
+            industry. Lorem IpsuLorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsu
           </p>
           <img src="rower.jpg" alt="czantoria gora szlaki" />
         </div>
@@ -116,12 +107,14 @@
           <img src="gora.jpg" alt="czantoria gora szlaki" />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsu
+            industry. Lorem IpsuLorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem IpsuLorem Ipsum is simply dummy text
+            of the printing and typesetting industry. Lorem Ipsu
           </p>
         </div>
       </div>
       <div>
-        <div class="contact">
+        <div class="contact" id="contact">
           <div class="contact__title">
             <h1>Kontakt</h1>
             <h2>Z Radością Odpowiemy Na Wasze Pytania</h2>
@@ -175,4 +168,10 @@
       </div>
     </main>
   </body>
+  <footer>
+    <p>© wszelkie prawa zastrzerzone</p>
+    <div class="to__up">
+      <a href="#top"><i class="fas fa-chevron-circle-up"></i></a>
+    </div>
+  </footer>
 </html>
