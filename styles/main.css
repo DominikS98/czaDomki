@@ -12,20 +12,16 @@ i {
   color: #0073e6;
 }
 .menu {
-  display: flex;
-  justify-content: space-between;
-  background: white;
-  align-items: center;
-  position: fixed;
+  background: rgba(255, 255, 255, 0.562);
   width: 100%;
   z-index: 10;
   transition: 0.5s;
-  height: 100px;
+  position: fixed;
+  box-shadow: 0.4px 0.5px 1px 1px rgba(0, 0, 0, 0.315);
 }
 .logo {
-  width: 10%;
-  margin: 0 2rem;
   transition: 0.5s;
+  width: 120px;
 }
 .logo img {
   width: 100%;
@@ -33,33 +29,44 @@ i {
 }
 .menu__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
-  align-items: flex-end;
+  width: 100%;
+
 }
 .menu__list--item {
-  margin: 1rem 2rem;
-  transition: 0.5s;
+  margin: 0.3rem 2rem;
+  font-size: 24px;
 }
 .menu__list--item a {
   color: black;
-  font-size: 24px;
   text-decoration: none;
-  border: none;
-  padding-bottom: 0rem;
   transition: 0.5s;
+  text-transform: uppercase;
 }
+
 .menu__list--item a:hover,
 .menu__list--item a:focus {
-  color: #0fff00;
+  color: #16a30c;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #0fff00;
+  font-size: 20px;
 }
 .slang {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  background: #0073e6;
   height: 50vh;
+  background-image: linear-gradient(
+      118deg,
+      rgba(15, 174, 77, 1) 0%,
+      rgba(15, 174, 76, 0.247) 100%
+    ),
+    url("../pasek.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .slang h1 {
   font-size: 50px;
@@ -76,7 +83,7 @@ i {
   height: 0.5px;
   left: -22%;
   position: relative;
-  background: #0fff00;
+  background: #0073e675;
   margin: 0.9rem;
 }
 .conteiner__main {
@@ -94,16 +101,39 @@ i {
   justify-content: center;
   align-items: center;
   width: 60%;
+  text-align: center;
 }
 .AboutUs p {
   padding: 50px;
-  backdrop-filter: blur(8px);
   font-size: 20px;
+  text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.274);
+  background: rgba(255, 255, 255, 0.315);
+  border-radius: 10px;
 }
 .Equipment {
   height: 100vh;
   width: 100%;
 }
+.Equipment__dis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.Equipment__dis img {
+  height: 500px;
+  width: 300px;
+  margin-right: 2rem;
+}
+.Equipment__dis--box {
+  width: 30%;
+  text-align: center;
+}
+.Equipment__dis--box p {
+  font-size: 24px;
+  width: 100%;
+}
+
 .num {
   display: flex;
   justify-content: center;
@@ -126,19 +156,6 @@ i {
 .num div i {
   font-size: 2rem;
 }
-.Equipment__dis {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-}
-.Equipment__dis img {
-  height: 500px;
-  width: 300px;
-}
-.Equipment__dis p {
-  width: 50%;
-}
 .place {
   margin-top: 10rem;
   display: flex;
@@ -150,7 +167,7 @@ i {
   background: #e2e2e270;
 }
 .place h2 {
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 .place__atr {
   display: flex;
@@ -165,20 +182,34 @@ i {
   -webkit-box-shadow: 4px 5px 10px 1px rgba(0, 0, 0, 0.73);
   box-shadow: 4px 5px 10px 1px rgba(0, 0, 0, 0.73);
 }
-.place__atr p {
+.place__atr div {
   margin: 1.5rem;
-  width: 50%;
+  width: 60%;
+}
+.place__atr div h2 {
+  text-align: center;
 }
 .white {
   background: white;
   width: 100%;
+  padding: 2rem;
+}
+.white div {
+  width: 30%;
 }
 .contact {
   display: flex;
   align-items: center;
   flex-flow: column;
   width: 100%;
-  background: #0073e6;
+  background-image: linear-gradient(
+      118deg,
+      rgba(0, 115, 230, 1) 0%,
+      rgba(0, 115, 230, 0.247) 100%
+    ),
+    url("../pasek.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .contact__title {
   display: flex;
@@ -207,6 +238,10 @@ i {
   font-size: 1.5rem;
 }
 .contact__box--info i {
+  color: black;
+}
+.phone {
+  text-decoration: none;
   color: black;
 }
 .but__map {
@@ -276,7 +311,26 @@ footer {
   font-size: 2rem;
   color: #0fff00;
 }
+.nav__trasform{
+  background: rgba(255, 255, 255, 0.747);
+}
+.menu__list--transform{
+  margin: 0.2rem 1rem;
+  transition: 0.5s;
+}
+.menu__logo--transform{
+  width: 60px;
+}
+.menu__item--transform a{
+  font-size: 15px;
+}
+
+
+
 @media (max-width: 600px) {
+  *{
+    font-size: 15px;
+  }
   .menu {
     display: none;
   }
