@@ -21,7 +21,10 @@ document.addEventListener('scroll', () => {
         nav.classList.add('nav__trasform');
         lista.classList.add('menu__list--transform');
         logo.classList.add('menu__logo--transform');
-        item.classList.add('menu__item--transform');
+        item.forEach(element => {
+            item.classList.add('menu__item--transform');
+        });
+       
     }
     else {
         nav.classList.remove('nav__trasform');

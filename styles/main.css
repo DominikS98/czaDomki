@@ -33,7 +33,6 @@ i {
   justify-content: center;
   list-style: none;
   width: 100%;
-
 }
 .menu__list--item {
   margin: 0.3rem 2rem;
@@ -186,6 +185,9 @@ i {
   margin: 1.5rem;
   width: 60%;
 }
+.place__atr div  ul{
+  list-style: none;
+}
 .place__atr div h2 {
   text-align: center;
 }
@@ -311,24 +313,22 @@ footer {
   font-size: 2rem;
   color: #0fff00;
 }
-.nav__trasform{
+.nav__trasform {
   background: rgba(255, 255, 255, 0.747);
 }
-.menu__list--transform{
+.menu__list--transform {
   margin: 0.2rem 1rem;
   transition: 0.5s;
 }
-.menu__logo--transform{
+.menu__logo--transform {
   width: 60px;
 }
-.menu__item--transform a{
+.menu__item--transform a {
   font-size: 15px;
 }
 
-
-
 @media (max-width: 600px) {
-  *{
+  * {
     font-size: 15px;
   }
   .menu {
@@ -339,6 +339,9 @@ footer {
   }
   .AboutUs p {
     font-size: 16px;
+  }
+  .slang h1::after {
+    display: none;
   }
   .Equipment__dis {
     height: auto;
@@ -356,6 +359,12 @@ footer {
   .place__atr {
     flex-flow: column;
   }
+  .place__atr div {
+    width: 80%;
+  }
+  .place__atr div ul {
+    text-align: center;
+  }
   .num {
     margin: 1rem 0;
     min-width: 10vh;
@@ -372,5 +381,14 @@ footer {
   }
   .place {
     height: auto;
+  }
+  .contact__title h1::after {
+    display: none;
+  }
+  .contact__box--info {
+    width: 100%;
+  }
+  .mail p {
+    font-size: 13px;
   }
 }
