@@ -423,18 +423,29 @@ footer {
     width: 80%;
     text-align: center;
   }
+  .Equipment__box--item--list ul {
+    width: 100%;
+    padding: 5rem;
+  }
   .place__atr--item h2 {
     font-size: 20px;
   }
-  .place__atr--item{
+  .place__atr--item {
     width: 50%;
   }
-  .place__atr--list{
+  .place__atr--list {
     flex-wrap: wrap;
     width: 100%;
   }
   .place__atr--list li {
     font-size: 15px;
+  }
+  .title {
+    width: 80%;
+  }
+  .place__atr--item {
+    text-align: center;
+    width: 100%;
   }
 }
 @media (max-width: 900px) {
@@ -495,12 +506,15 @@ footer {
     text-align: center;
     min-height: 20vh;
   }
-
+  .Equipment__box--item--list ul {
+    width: 100%;
+    padding: 2rem;
+  }
   .place__atr {
     flex-flow: column;
   }
-  .place__atr div {
-    width: 80%;
+  .palce--img{
+    width: 50%;
   }
   .place__atr div ul {
     text-align: center;
