@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>czardomki</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/moblie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script
-      src="https://kit.fontawesome.com/fceb4f7334.js"
+     src="https://kit.fontawesome.com/fceb4f7334.js"
       crossorigin="anonymous"
     ></script>
     <script src="scripts/app.js" defer></script>
@@ -20,26 +24,38 @@
             <a href="#AboutUs">O Nas</a>
           </li>
           <li class="menu__list--item">
-            <a href="#AboutUs">NASZE DOMKI </a>
+            <a href="#domki">NASZE DOMKI </a>
           </li>
           <li class="menu__list--item">
-            <a href="#">ATRAKCJE </a>
+            <a href="#atrakcje">ATRAKCJE </a>
           </li>
           <li class="menu__list--item logo">
             <img src="logo.svg" />
           </li>
           <li class="menu__list--item">
-            <a href="#contact">CENNIK </a>
+            <a href="#cennik">CENNIK </a>
           </li>
           <li class="menu__list--item">
             <a href="#contact">Kontakt</a>
           </li>
           <li class="menu__list--item">
             <i class="fas fa-mobile-alt"></i>
-            <a href="tel:+48604642835">Zadzwoń teraz</a>
+            <a href="tel:+48604642835">+48604642835</a>
           </li>
         </ul>
       </nav>
+      <span class="burger"><i class="fas fa-bars mobile--i"></i></span>
+      <div class="mobile__menu--box">
+        <nav class="mobile__menu">
+          <img src="logo.svg">
+          <a href="#AboutUs">O Nas</a>
+          <a href="#domki">NASZE DOMKI </a>
+          <a href="#atrakcje">ATRAKCJE </a>
+          <a href="#cennik">CENNIK </a>
+          <a href="#contact">Kontakt</a>
+          <a href="tel:+48604642835">Zadzwoń teraz</a>
+        </nav>
+    </div>
     </header>
     <main>
       <div class="slang" id="top">
@@ -50,32 +66,33 @@
         <div class="AboutUs">
           <p>
             Czarujące miejsce w Beskidzie Śląskim u podnóża góry Czantoria w
-            sąsiedztwie rzeki Wisły.<br />
+            sąsiedztwie rzeki Wisły.
             CzaDomki to dwa całoroczne, nowo powstałe, komfortowe, drewniane
             domki położone w przepięknej, spokojnej dzielnicy Ustronia –
             Polanie. W każdym domku do dyspozycji Gości przygotowaliśmy dwie
             sypialnie, kuchnię ze standardowym wyposażeniem, a także łazienkę
-            oraz część wypoczynkową z kanapą. Podczas pobytu mogą Państwo
-            dodatkowo odpocząć się na dużym, częściowo zadaszonym tarasie z
-            którego mogą podziwiać widoki na ogród. Dla dzieci przygotowaliśmy
-            drewniany domek z zabawkami oraz ściankę kredowego graffiti.
+            oraz część wypoczynkową z kanapą.
           </p>
         </div>
       </div>
       <div class="Equipment">
         <div class="Equipment__dis">
-          <img src="model.png" alt="model CzaDomku" />
-          <div class="Equipment__dis--box">
+          <div class="img--home"><img src="model.png" alt="model CzaDomku" /></div>
+          <div class="Equipment__dis--box" id="domki">
             <h1>Nasze Domki</h1>
             <br />
             <p>
               CzaDomki wyposażone są w klimatyzację i elektryczne ogrzewanie
-              podłogowe.<br />
+              podłogowe.
               W każdym zmieści się do 6 Gości.
+              Podczas pobytu mogą Państwo
+              dodatkowo odpocząć się na dużym, częściowo zadaszonym tarasie z
+              którego mogą podziwiać widoki na ogród. Dla dzieci przygotowaliśmy
+              drewniany domek z zabawkami oraz ściankę kredowego graffiti.
             </p>
           </div>
         </div>
-        <div class="num">
+        <div class="num" id="cennik">
           <div>
             <i class="fas fa-home"></i>
             <p>Domki:</p>
@@ -83,7 +100,7 @@
           </div>
           <div>
             <i class="fas fa-person-booth"></i>
-            <p>Pokoje:</p>
+            <p>Sypialnie:</p>
             <p>4</p>
           </div>
           <div>
@@ -92,13 +109,51 @@
             <p>12</p>
           </div>
         </div>
-
+        <div class="price__box" >
+        <div class="price__box--item">
+          <ul class="price">
+            <li class="price__header">dla x osób</li>
+            <li class="price__grey">Cena*:</li>
+            <li>Sezon: </li>
+            <li>lato: zima:</li>
+            <li>Poza: </li>
+            <li>lato: zima:</li>
+          </ul>
+        </div>
+        <div class="price__box--item rec">
+          <div class="band">Polecany</div>
+          <ul class="price">
+            <li class="price__header recommended">dla x osób</li>
+            <li class="price__grey">Cena*:</li>
+            <li>Sezon: </li>
+            <li>lato: zima:</li>
+            <li>Poza: </li>
+            <li>lato: zima:</li>
+          </ul>
+        </div>
+        <div class="price__box--item">
+          <ul class="price">
+            <li class="price__header">dla x osób</li>
+            <li class="price__grey">Cena*:</li>
+            <li>Sezon: </li>
+            <li>lato: zima:</li>
+            <li>Poza: </li>
+            <li>lato: zima:</li>
+          </ul>
+        </div>
+        </div>
+        <div class="statute">
+            <p>*do kazdego pobytu doliczane sa opłaty za prąd i wode</p>
+            <p>Na miejscu dostępny jest bezpłatny parking niestrzeżony. By wynajem domków stał się przyjemnym i niezapomnianym wspomnieniem prosimy wszystkich Gości by zapoznali się z regulaminem.
+               <a href="./Regulamin.pdf">(odnośnik do pobrania pliku PDF)</a>
+            </p>
+        </div>
         <div class="Equipment__box--items">
           <div class="Equipment__box--item">
             <div class="Equipment__box--item--img left-img">
               <img src="rower.jpg" />
             </div>
-            <div class="Equipment__box--item--list">
+            <div class="Equipment__box--item--list" >
               <h2>KUCHNIA</h2>
               <ul>
                 <li>lodówka</li>
@@ -199,8 +254,8 @@
 
        </div>
     </div>
-      <div class="place grey">
-        <div class="title">
+      <div class="place grey" id="atrakcje">
+        <div class="title" >
           <h2>Atrakcje w okolicy</h2>
           <h3>
             <i>Korzystne położenie i bogata oferta atrakcji w Ustroniu oraz
@@ -209,11 +264,6 @@
         </div>
         
         <div class="place__atr">
-
-          <div class="palce--img">
-            <img src="gora.jpg" alt="czantoria gora szlaki" />
-          </div>
-
           <div class="place__atr--item">
             <h2>DLA AKTYWNYCH</h2>
             <ul class="place__atr--list">
@@ -221,6 +271,20 @@
               <li>liczne szlaki turystyczne i ścieżki spacerowe,</li>
               <li>trasy rowerowe oraz Bike Parki,</li>
               <li>parki linowe, tory saneczkowe,</li>
+            </ul>
+          </div>
+          <div class="palce--img">
+            <img src="gora.jpg" alt="czantoria gora szlaki" />
+          </div>
+        </div>
+
+        <div class="place__atr white">
+          <div class="palce--img">
+            <img src="gora.jpg" alt="czantoria gora szlaki" />
+          </div>
+
+          <div class="place__atr--item">
+            <ul class="place__atr--list">
               <li>baseny, baseny solankowe, tężnia</li>
               <li>wypoczynek nad rzeką Wisłą</li>
               <li>
@@ -233,7 +297,7 @@
           </div>
         </div>
 
-        <div class="place__atr white">
+        <div class="place__atr ">
           <div class="place__atr--item">
             <h2>W ZIMIE</h2>
 
@@ -243,14 +307,13 @@
               <li>wypożyczalnie nart i sprzętu zimowego</li>
               <li>lodowisko</li>
               <li>trasy biegowe</li>
-              <li>trasy biegowe</li>
             </ul>
           </div>
           <div class="palce--img">
             <img src="rower.jpg" alt="czantoria gora szlaki" />
           </div>
         </div>
-        <div class="place__atr">
+        <div class="place__atr white">
           <div class="palce--img">
             <img src="gora.jpg" alt="czantoria gora szlaki" />
           </div>
@@ -264,7 +327,7 @@
           </div>
         </div>
 
-        <div class="place__atr white">
+        <div class="place__atr ">
           <div class="place__atr--item">
             <h2>KULTURA</h2>
             <div class="place__atr--list__program">
@@ -277,13 +340,130 @@
               <li>muzea</li>
               <li>galerie</li>
             </ul>
-           
             
           </div>
           <div class="palce--img">
             <img src="gora.jpg" alt="czantoria gora szlaki" />
           </div>
         </div>
+      </div>
+      <div class="others__box">
+        <div class="green__box"></div>
+        <h1>Pobliskie miejsca </h1>
+       <div class="others__box--items">
+        <div class="others__box--item title--box">
+          <p> miesjsce oraz odległosci </p>
+          <i class="fas fa-hiking"></i>
+          <i class="fas fa-bicycle"></i>
+          <i class="fas fa-car"></i>
+        </div>
+
+        <div class="others__box--item">
+          <p>PKP - 700m</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item ">
+          <p>Przystanek Autobus - 400m</p>
+          <p>5min</p>
+          <p>2min</p>
+          <p>2min</p>
+        </div> 
+
+        <div class="others__box--item">
+          <p>Sklep spożywczy - 600m</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item ">
+          <p>Kolej linowa Czantoria - 1km</p>
+          <p>5min</p>
+          <p>2min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item">
+          <p>góra Równica - 7km</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item ">
+          <p>Bike Park Palenica – 2,3km </p>
+          <p>5min</p>
+          <p>2min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item">
+          <p>rzeka Wisła – 150m</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item ">
+          <p>Leśny Park Niespodzianek - 5km </p>
+          <p>5min</p>
+          <p>2min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item">
+          <p>Centrum Ustronia – 4 km </p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item">
+          <p>Centrum Wisły – 4,7 km</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item">
+          <p>Skolnity – 5,6 km</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item">
+          <p>Cienków – 11km</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item">
+          <p>Stożek – 13 km</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+        <div class="others__box--item">
+          <p>Skocznia Narciarska im A. Małysza – 10km</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+        
+        <div class="others__box--item">
+          <p>Stacja benzynowa – 750m</p>
+          <p>8min</p>
+          <p>3min</p>
+          <p>2min</p>
+        </div>
+
+       </div>
       </div>
       <div>
         <div class="contact" id="contact">
@@ -294,19 +474,17 @@
           <div class="contact__box--info">
             <div class="phone">
               <i class="fas fa-mobile-alt"></i>
-              <p>telefon komórkowy</p>
-              <a class="phone" href="tel:+48604642835">+48 604 642 835</a>
+              <p><a class="phone" href="tel:+48604642835">+48 604 642 835</a></p>
             </div>
             <div class="address">
               <i class="fas fa-map-marker-alt"></i>
-              <p>Ustroń</p>
-              <p>Ul. Wiślańska 20</p>
               <p>43-450</p>
+              <p>Ul. Wiślańska 20</p>
+              <p>Ustroń</p>
               <button class="but__map">Mapa</button>
             </div>
             <div class="mail">
               <i class="fas fa-mail-bulk"></i>
-              <p>E-mail</p>
               <p>kontakt@czadomki.pl</p>
             </div>
           </div>
@@ -328,11 +506,11 @@
             <div class="info__items">
               <div class="info__item">
                 <i class="fab fa-facebook-square"></i>
-                <p>Linka do fb</p>
+                <a href="https://www.facebook.com/profile.php?id=100070587258102">Linka do fb</a>
               </div>
               <div class="info__item">
                 <i class="fas fa-photo-video"></i>
-                <p>Linka do galeri</p>
+                <a href="https://www.facebook.com/profile.php?id=100070587258102&sk=photos">Linka do galeri</a>
               </div>
             </div>
           </div>
