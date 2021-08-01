@@ -159,11 +159,6 @@
   .price__box--item {
     width: 90%;
   }
-  .band {
-    width: 400px;
-    top: 10%;
-    right: -20%;
-  }
   .place__atr {
     flex-flow: column;
   }
