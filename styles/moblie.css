@@ -108,6 +108,11 @@
     width: 100%;
     flex-flow: column;
   }
+  .Equipment__dis--box {
+
+    width: 80%;
+
+  }
   .Equipment__dis img {
     display: none;
   }
