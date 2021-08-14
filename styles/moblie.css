@@ -44,6 +44,13 @@
     text-align: center;
     width: 100%;
   }
+  .others__box--item p {
+    font-size: 15px;
+  }
+  .title--box {
+    position: sticky;
+    top: 2rem;
+  }
 }
 @media (max-width: 900px) {
   .menu {
@@ -65,10 +72,10 @@
     z-index: 2;
     background-color: #c9c9c9be;
     transition: 1s;
-    transform: translateX(500px);
+    transform: translateX(1000px);
   }
   .mobileOn {
-    transform: translateX(200px);
+    transform: translateX(70%);
   }
   .mobile__menu img {
     width: 30%;
@@ -109,9 +116,7 @@
     flex-flow: column;
   }
   .Equipment__dis--box {
-
     width: 80%;
-
   }
   .Equipment__dis img {
     display: none;
@@ -162,7 +167,7 @@
     align-items: center;
   }
   .price__box--item {
-    width: 90%;
+    width: 100%;
   }
   .place__atr {
     flex-flow: column;
@@ -173,12 +178,15 @@
   .place__atr div ul {
     text-align: center;
   }
+  .title--box {
+    top: 0%;
+  }
   .others__box {
     margin: 0;
-    overflow-x: hidden;
   }
   .others__box--items {
     width: 90%;
+    height: auto;
   }
   .contact__title {
     text-align: center;

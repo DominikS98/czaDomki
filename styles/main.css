@@ -2,6 +2,10 @@
   font-family: atmosphere;
   src: url(../font/aAtmospheric.ttf);
 }
+@font-face {
+  font-family: KubaReczny;
+  src: url(../font/KubaReczny.ttf);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +16,7 @@
 i {
   color: #0073e6;
 }
-h1{
+h1 {
   text-transform: uppercase;
 }
 .menu {
@@ -23,14 +27,14 @@ h1{
   position: fixed;
   box-shadow: 0.4px 0.5px 1px 1px rgba(0, 0, 0, 0.315);
 }
-.mobile__menu{
+.mobile__menu {
   display: none;
 }
 .logo {
   transition: 0.5s;
   width: 120px;
 }
-.burger{
+.burger {
   display: none;
 }
 .logo img {
@@ -84,7 +88,10 @@ h1{
   font-family: atmosphere;
 }
 .slang h2 {
-  font-weight: 200;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: KubaReczny;
 }
 .slang h1::after {
   content: "";
@@ -372,9 +379,9 @@ h1{
   box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.562);
   background: rgba(255, 255, 255, 0.5);
 }
-.others__box--item i,
+.others__box--item img,
 .others__box--item p {
-  width: 20%;
+  margin: 1rem;
   text-align: center;
   padding: 0.3rem;
   font-size: 1.2rem;
@@ -385,6 +392,8 @@ h1{
   border-right: 0.5px solid rgba(102, 101, 101, 0.356);
 }
 .title--box {
+  position: sticky;
+  top: 15%;
   background-color: #e2e2e2;
   font-size: 1.4rem;
   color: rgb(0, 0, 0);
@@ -392,7 +401,7 @@ h1{
 .others__box--item i {
   font-size: 2rem;
 }
-.green__box{
+.green__box {
   width: 50%;
   height: 70%;
   position: absolute;
@@ -493,9 +502,6 @@ h1{
   width: 40%;
   font-size: 2rem;
 }
-.info__item i {
-  font-size: 3rem;
-}
 .info__item a {
   color: black;
   text-decoration: none;
@@ -503,15 +509,7 @@ h1{
 .map_down {
   z-index: -1;
 }
-footer {
-  border-top: 1px solid #0fff00;
-  position: relative;
-  height: 50px;
-  width: 70%;
-  display: flex;
-  align-items: center;
-  margin: 1rem auto 0 auto;
-}
+
 .to__up {
   cursor: pointer;
   position: absolute;
@@ -539,7 +537,7 @@ footer {
 .menu__item--transform {
   font-size: 15px;
 }
-.backdrop{
+.backdrop {
   opacity: 0;
   width: 100%;
   height: 100vh;
@@ -548,11 +546,11 @@ footer {
   position: fixed;
   transition: 0.5s;
 }
-.backdrop__on{
+.backdrop__on {
   opacity: 1;
   z-index: 1;
 }
-.cookie{
+.cookie {
   width: 100%;
   height: 15vh;
   position: fixed;
@@ -563,12 +561,11 @@ footer {
   justify-content: center;
   align-items: center;
   box-shadow: 1px -1px 1px 2px rgba(0, 0, 0, 0.295);
-
 }
-.cookie p{
+.cookie p {
   margin: 0.2rem;
 }
-.cookie a{
+.cookie a {
   margin-left: 1rem;
   padding: 0.5rem;
   background-color: black;
@@ -576,12 +573,22 @@ footer {
   cursor: pointer;
 }
 .cookie a:hover,
-.cookie a:focus{
+.cookie a:focus {
   color: black;
-  background:white; ;
+  background: white;
 }
-.cookie--off{
+.cookie--off {
   display: none;
+}
+footer {
+  border-top: 1px solid #0fff00;
+  position: relative;
+  height: 50px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem auto 0 auto;
 }
 @keyframes mymove {
   0% {
