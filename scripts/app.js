@@ -3,6 +3,8 @@ const aButton = document.querySelectorAll(".mobile__menu a");
 const AList = Array.from(aButton);
 const backdrop = document.querySelector(".backdrop");
 const cokie = document.querySelector(".cookie--arg");
+const infoItems = document.querySelector('.info__items');
+const map = document.querySelector('.info__conteiner');
 
 
 const cookieOff = () => {
@@ -13,12 +15,11 @@ const cookieOff = () => {
 cokie.addEventListener('click', cookieOff);
 
 const mapButtFunction = () => {
-
-    const map = document.querySelector('.info__conteiner');
     map.classList.toggle('map_down');
 }
 
 mapButt.addEventListener("click", mapButtFunction);
+infoItems.addEventListener("click", mapButtFunction);
 
 
 const mobileMenu = document.querySelector('.mobile--i');
@@ -40,7 +41,7 @@ const closeMenu = () => {
 
 backdrop.addEventListener('click', closeMenu);
 
-AList.forEach((a, idx, AList)=>{
+AList.forEach((a, idx, AList) => {
     AList[idx].addEventListener('click', closeMenu);
 });
 
