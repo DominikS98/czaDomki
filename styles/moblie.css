@@ -51,9 +51,8 @@
     position: sticky;
     top: 2rem;
   }
-  .sign img{
-    width: 50%;
-    overflow-x: hidden;
+  .sign{
+   display: none;
   }
 }
 @media (max-width: 900px) {
