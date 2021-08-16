@@ -51,8 +51,12 @@
     position: sticky;
     top: 2rem;
   }
-  .sign{
-   display: none;
+  .sign {
+    width: 50%;
+    margin: auto;
+  }
+  .sign img {
+    width: 80%;
   }
 }
 @media (max-width: 900px) {
