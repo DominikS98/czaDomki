@@ -1,8 +1,10 @@
 @media (max-width: 1200px) {
   .menu__list--item {
-    font-size: 15px;
     padding: 0;
     text-align: center;
+  }
+  .menu__list--item a {
+    font-size: 15px;
   }
   .Equipment__box--item--list ul li {
     font-size: 20px;
@@ -17,8 +19,8 @@
     text-align: center;
   }
   .Equipment__box--item--list {
-    width: 80%;
     text-align: center;
+    width: 80%;
   }
   .Equipment__box--item--list ul {
     width: 100%;
@@ -46,17 +48,17 @@
   }
   .others__box--item p {
     font-size: 15px;
+    margin: 0.8rem;
   }
   .title--box {
     position: sticky;
     top: 2rem;
   }
-  .sign {
+  .others__box--item div:first-of-type {
     width: 50%;
-    margin: auto;
   }
-  .sign img {
-    width: 80%;
+  .icons {
+    display: flex;
   }
 }
 @media (max-width: 900px) {
@@ -65,33 +67,34 @@
   }
   .mobile__menu--box {
     border-radius: 20px;
-    width: 94%;
     height: 90vh;
     overflow: hidden;
     position: absolute;
+    width: 94%;
   }
   .mobile__menu {
+    background-color: #c9c9c9be;
     display: flex;
     flex-flow: column;
-    position: fixed;
-    width: 80%;
     height: 100%;
-    z-index: 2;
-    background-color: #c9c9c9be;
-    transition: 1s;
+    position: fixed;
     transform: translateX(1000px);
+    transition: 1s;
+    width: 80%;
+    z-index: 2;
   }
   .mobileOn {
     transform: translateX(70%);
   }
   .mobile__menu img {
-    width: 30%;
+    width: 60%;
+    margin-top: 1rem;
   }
   .mobile__menu a {
-    padding: 1rem;
     color: black;
-    text-decoration: none;
     font-weight: bold;
+    padding: 1rem;
+    text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
   }
@@ -102,11 +105,11 @@
   }
   .burger {
     display: block;
-    z-index: 10;
-    position: fixed;
-    top: 2%;
-    right: 3%;
     font-size: 2rem;
+    position: fixed;
+    right: 3%;
+    top: 2%;
+    z-index: 10;
   }
   .AboutUs {
     width: 90%;
@@ -129,23 +132,23 @@
     display: none;
   }
   .Equipment__dis p {
-    margin: 0.5rem;
     font-size: 15px;
+    margin: 0.5rem;
     width: 90%;
   }
   .num {
+    align-items: center;
+    flex-flow: column;
     margin: 1rem 0;
     min-width: 10vh;
-    flex-flow: column;
-    align-items: center;
   }
   .num div {
-    margin: 0.2rem 0.5rem;
-    padding: 1.5rem;
-    border: none;
     border: 1px solid #e2e2e2;
-    min-width: 50%;
+    border: none;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.315);
+    margin: 0.2rem 0.5rem;
+    min-width: 50%;
+    padding: 1.5rem;
   }
   .Equipment__box--items {
     flex-flow: column;
@@ -191,8 +194,11 @@
   .others__box {
     margin: 0;
   }
+  .others__box--item {
+    margin: 0.5rem 0rem;
+  }
   .others__box--items {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
   .contact__title {
