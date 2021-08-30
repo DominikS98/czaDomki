@@ -74,7 +74,7 @@ document.addEventListener('scroll', () => {
             all[i].classList.remove('menu__item--transform');
         }
     }
-    if (x >= 7510) {
+    if (x >= 300) {
         toUp.classList.add('to__up--animation');
     }
     else {

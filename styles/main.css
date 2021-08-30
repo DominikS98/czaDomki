@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  font-family: "Georama", sans-serif;
 }
 i {
   color: #0073e6;
@@ -109,22 +109,20 @@ i {
   width: 130%;
 }
 .conteiner__main {
-  align-items: center;
+  align-items: flex-end;
   background-image: url("../zdjecia/tlo.jpg");
   background-position: center;
   background-size: cover;
   box-shadow: 0px 18px 13px 5px rgba(0, 0, 0, 0.336);
   display: flex;
-  height: 100vh;
   justify-content: center;
+  height: 100vh;
   width: 100%;
 }
 .AboutUs {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   text-align: center;
   width: 60%;
+  margin-bottom: 1rem;
 }
 .AboutUs p {
   background: rgba(255, 255, 255, 0.473);
@@ -191,14 +189,14 @@ i {
 }
 .Equipment__box--item--img {
   background-color: #a8a8a831;
-  height: 80%;
+
   padding: 1rem;
   text-align: left;
   width: 50%;
 }
 .Equipment__box--item--img img {
   box-shadow: 0px 7px 30px 5px rgba(0, 0, 0, 0.52);
-  transform: translate(20px, 70px);
+
   width: 60%;
 }
 .left-img {
@@ -208,9 +206,8 @@ i {
 }
 .left-img img {
   box-shadow: 0px 7px 30px 5px rgba(0, 0, 0, 0.52);
-  min-width: 50%;
-  transform: translate(-20px, 70px);
 }
+
 .Equipment__box--item--list {
   min-height: 55vh;
   width: 50%;
@@ -234,50 +231,100 @@ i {
   padding: 1rem;
 }
 
-.price__box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-.price__box--item {
-  box-shadow: 0px 8px 6px 4px rgba(0, 0, 0, 0.11);
-  margin: 1rem;
-  min-width: 30%;
-  overflow: hidden;
-  position: relative;
-}
-.rec {
-  box-shadow: 0px 8px 6px 4px rgba(0, 0, 0, 0.35);
+.price {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". konfort . standart ."
+    ". w-g w-g w-g ."
+    ". w-g w-g w-g ."
+    ". holiday holiday holiday ."
+    ". holiday holiday holiday ."
+    ". holiday holiday holiday ."
+    ". new new new ."
+    ". ferie ferie ferie ."
+    ". vacation vacation vacation .";
 }
 
-.price {
-  border: 1px solid #eee;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.price__header {
-  background-color: #0a5eb1;
-  color: white;
-  font-size: 25px;
+.standart {
+  grid-area: standart;
+  background-color: #00a752;
   text-align: center;
+  padding: 1rem;
+  border: 3px solid grey;
 }
-.recommended {
-  background-color: #16b60b;
-  padding: 0;
-}
-.price__grey {
-  background-color: rgba(187, 187, 187, 0.486);
-}
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 1.4rem;
+
+.konfort {
+  grid-area: konfort;
+  background-color: #719ece;
   text-align: center;
+  padding: 1rem;
+  border: 3px solid grey;
 }
-.item__dis {
-  height: 80%;
+
+.w-g {
+  grid-area: w-g;
+  display: flex;
+  width: 100%;
 }
+.w-g div,
+.holiday div,
+.new div,
+.ferie div,
+.vacation div {
+  min-width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-right: 3px solid grey;
+  border-left: 3px solid grey;
+}
+.w-g div,
+.new div,
+.vacation div{
+  background-color: #cccccc;
+}
+.vacation div{
+  border-bottom: 3px solid grey;
+}
+.w-g--time{
+  border-top: 3px solid grey;
+}
+
+.holiday {
+  grid-area: holiday;
+  display: flex;
+  width: 100%;
+}
+.holiday--list {
+  list-style: none;
+}
+
+.new {
+  grid-area: new;
+  background-color: #cccccc;
+  display: flex;
+  width: 100%;
+}
+
+.ferie {
+  grid-area: ferie;
+  display: flex;
+  width: 100%;
+}
+
+.vacation {
+  grid-area: vacation;
+  background-color: #cccccc;
+  display: flex;
+  width: 100%;
+}
+
 .statute {
   margin: 1rem;
 }
@@ -304,7 +351,7 @@ i {
   padding: 1rem;
 }
 .title h3 i {
-  color: #16a30c;
+  color: black;
 }
 .place__atr {
   align-items: center;
@@ -400,7 +447,6 @@ i {
 
 .others__box--item p:first-of-type {
   width: 40%;
-  border-right: 0.5px solid rgba(102, 101, 101, 0.356);
 }
 .others__box--item div:first-of-type {
   width: 45%;
@@ -525,14 +571,15 @@ i {
 }
 
 .to__up {
+  opacity: 0;
   cursor: pointer;
-  position: absolute;
-  right: -10%;
-  bottom: 200%;
-  z-index: 100;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 1;
 }
 .to__up--animation {
-  animation: mymove 3s;
+  animation: mymove 3s forwards;
 }
 .to__up a i {
   font-size: 4rem;
@@ -619,5 +666,7 @@ footer {
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
+    z-index: 50;
   }
 }

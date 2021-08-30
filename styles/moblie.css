@@ -172,12 +172,17 @@
     width: 100%;
     padding: 2rem;
   }
-  .price__box {
-    flex-flow: column;
-    align-items: center;
-  }
-  .price__box--item {
-    width: 100%;
+  .price{
+    grid-template-areas:
+    "konfort konfort . standart standart"
+    "w-g w-g w-g w-g w-g"
+    "w-g w-g w-g w-g w-g"
+    "holiday holiday holiday holiday holiday"
+    "holiday holiday holiday holiday holiday"
+    "holiday holiday holiday holiday holiday"
+    "new new new new new"
+    "ferie ferie ferie ferie ferie"
+    "vacation vacation vacation vacation vacation";
   }
   .place__atr {
     flex-flow: column;
@@ -222,5 +227,10 @@
   }
   .info__item i {
     font-size: 2rem;
+  }
+}
+@media (max-width: 400px){
+  .slang h1{
+    font-size: 40px;
   }
 }
