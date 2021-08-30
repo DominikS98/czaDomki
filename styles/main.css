@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Georama", sans-serif;
+  font-family: "Caudex", sans-serif;
 }
 i {
   color: #0073e6;
@@ -128,7 +128,7 @@ i {
   background: rgba(255, 255, 255, 0.473);
   border-radius: 10px;
   font-size: 20px;
-  padding: 50px;
+  padding: 20px 50px 50px 50px;
   text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.274);
 }
 .Equipment {
@@ -234,7 +234,7 @@ i {
 .price {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -263,6 +263,11 @@ i {
   text-align: center;
   padding: 1rem;
   border: 3px solid grey;
+  
+}
+.konfort h3,
+.standart h3{
+  font-family: atmosphere;
 }
 
 .w-g {
@@ -330,7 +335,7 @@ i {
 }
 .statute p {
   color: rgba(90, 89, 89, 0.795);
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 .place {
