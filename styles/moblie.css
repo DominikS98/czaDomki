@@ -63,7 +63,7 @@
 }
 @media (max-width: 900px) {
   .slang{
-  height: 30vh;
+  display: none;
   }
   .menu {
     display: none;
