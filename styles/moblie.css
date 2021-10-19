@@ -63,7 +63,7 @@
 }
 @media (max-width: 900px) {
   .slang{
-  display: none;
+  height: 30vh;
   }
   .menu {
     display: none;
@@ -119,9 +119,6 @@
   }
   .AboutUs p {
     font-size: 16px;
-  }
-  .slang h1::after {
-    display: none;
   }
   .Equipment__dis {
     height: auto;
@@ -230,10 +227,5 @@
   }
   .info__item i {
     font-size: 2rem;
-  }
-}
-@media (max-width: 400px){
-  .slang h1{
-    font-size: 40px;
   }
 }
