@@ -7,6 +7,16 @@ const infoItems = document.querySelector('.info__items');
 const map = document.querySelector('.info__conteiner');
 
 
+// Call detect.parse() with navigator.userAgent as the argument
+var user = detect.parse(navigator.userAgent);
+
+// Display some property values in my browser's dev tools console
+console.log(
+  user.browser.family
+  user.browser.version
+  user.os.name
+);
+
 const cookieOff = () => {
     const cokieBox = document.querySelector(".cookie");
 
